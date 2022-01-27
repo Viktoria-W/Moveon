@@ -1,0 +1,37 @@
+/*---------------Fonts-------------------------------*/
+@font-face {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 400;
+    src: local('Jost-Regular'), 
+    url("/fonts/Jost-Regular.woff2") format('woff2'),
+    url("/fonts/Jost-Regular.woff") format('woff'),
+    url("/fonts/Jost-Regular.ttf") format('ttf');
+}
+@font-face {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    src: local('Jost-Medium'), 
+    url("/fonts/Jost-Medium.woff2") format('woff2'),
+    url("/fonts/Jost-Medium.woff") format('woff'),
+    url("/fonts/Jost-Medium.ttf") format('ttf');
+}
+@font-face {
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 700;
+    src: local('Jost-Bold'), 
+    url("/fonts/Jost-Bold.woff2") format('woff2'),
+    url("/fonts/Jost-Bold.woff") format('woff'),
+    url("/fonts/Jost-Bold.ttf") format('ttf');
+}
+@font-face {
+    font-family: "Roboto-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto-Regular'), 
+    url("/fonts/Roboto-Regular.woff2") format('woff2'),
+    url("/fonts/Roboto-Regular.woff") format('woff'),
+    url("/fonts/Roboto-Regular.ttf") format('ttf');
+}

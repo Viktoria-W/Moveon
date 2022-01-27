@@ -1,0 +1,211 @@
+.advantages {
+
+    &__title {
+        font-family: "Jost", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 46px;
+        line-height: 66px;
+        text-align: center;
+        color: $basick-black;
+        margin: 0px 0px 23px 0px;
+        padding: 35px 0px 0px 0px;
+    }
+
+    &__text {
+        font-family: "Jost",sans-serif;
+        line-height: 124%;
+        font-size: 18px;
+        text-align: center;
+        letter-spacing: 0.08em;
+        color: $basick-gray;
+        padding: 0px 0px 101px 0px;
+        max-width: 424px;
+        margin: 0px auto;
+    }
+}
+.list-block {
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: min-content min-content min-content;
+        align-items: flex-start;
+        grid-auto-flow: column;
+
+        &::before {
+            content: '';
+            top: 0;
+            left: 0;
+            width: 90%;
+            height: 886px;
+            background: url(../img/dextop/mobile-main.png) top right / contain no-repeat;;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+    }
+
+    &__item {
+        padding: 65px 40px 0px;
+    }
+    
+    &__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__container-rigth-side {
+        flex-direction: row-reverse;
+        text-align: right;
+    }
+
+    &__container-img {
+        background: linear-gradient(180deg, #8253D8 0%, #D05DDE 100%);
+        width: 90px;
+        height: 90px;
+        box-sizing: border-box;
+        border-radius: 50%;
+
+            img {
+                display: block;
+                padding: 26px;
+            }
+    }
+
+    &__container-info {
+        margin: 0px 26px 0px 26px;
+    }
+
+    &__container-title {
+        font-family: "Jost", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 124%;
+        color: $basick-black;
+        margin: 0px 0px 13px 0px;
+    }
+
+    &__container-text {
+        font-family: "Jost", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 124%;
+        color: $basick-gray;
+    }
+}
+
+@media (max-width: 1218px) {
+    .list-block {
+        &__list {
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            grid-template-rows: repeat(6, min-content);
+            align-items: flex-start;
+            grid-auto-flow: column;
+    
+            &::before {
+                content: '';
+                top: 0;
+                left: 0;
+                width: 90%;
+                height: 886px;
+                background: url(../img/dextop/mobile-main.png) top right / contain no-repeat;
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 7;
+                align-self: center;
+            }
+        }
+
+        &__container {
+            flex-direction: row-reverse;
+            text-align: right;
+        }
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .advantages {
+
+        &__container {
+            padding: 0px 10px;
+        }
+
+        &__title {
+            font-size: 36px;
+            line-height: 52px;
+            margin: 0px 0px 8px 0px;
+        }
+
+        &__text {
+            font-size: 14px;
+            padding: 0px 0px 20px 0px;
+        }
+    }
+
+    .list-block {
+        
+        &__list {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(7, min-content);
+
+            &::before {
+                content: url(../img/mobile/mobile-main.png);
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 4;
+                grid-row-end: 5;
+                background: none;
+                width: auto;
+                height: inherit;
+                justify-items: center;
+                text-align: center;
+                margin: 0px 0px 25px 0px;
+            }
+        }
+
+        &__item {
+            margin: 0px 0px 25px 0px;
+        }
+
+        &__container {
+            flex-direction: row;
+            align-items: center;
+            text-align: left;
+        }
+        &__container-rigth-side {
+            flex-direction: row;
+            text-align: left;
+        }
+        &__container-info {
+            margin: 0px 0px 0px 13px;
+        }
+
+        &__container-img {
+            width: 60px;
+            height: 60px;
+
+            img {
+                padding: 13px;
+            }
+        }
+
+        &__container-title {
+            font-size: 18px;
+            margin: 0px 0px 3px 0px;
+        }
+
+        &__container-text {
+            
+            font-size: 14px;
+            
+        }
+    }
+}

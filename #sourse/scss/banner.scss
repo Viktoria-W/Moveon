@@ -1,0 +1,143 @@
+.main {
+        &__banner {
+                background: url(../img/dextop/background-banner.png) top center / cover no-repeat;
+                min-height: 1100px;
+        }
+}
+.banner {
+
+        &__container {
+                padding: 316px 0px 0px 10px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: min-content min-content min-content;
+        }
+
+        &__title {
+                font-family: "Jost",sans-serif;
+                font-weight: bold;
+                line-height: 124%;
+                font-size: 48px;
+                color: $basick-white;
+                text-align: left;
+                margin: 0px 0px 14px 0px;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 2;
+        }
+
+        &__sup-title {
+                font-family: "Jost", sans-serif;
+                font-weight: normal;
+                color: $basick-white;
+                line-height: 124%;
+                font-size: 20px;
+                text-align: left;
+                margin: -10px 0px 0px 0px;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 2;
+                grid-row-end: 3;
+        }
+
+        &__button-block {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                margin: 100px 0px 0px 0px;
+        }
+
+        &__img {
+                background: url(../img/dextop/mobile-banner.png) top right / contain no-repeat;
+                width: 90%;
+                height: 776px;
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 4;
+                margin: -165px 0px 0px 0px;
+        }
+}
+.button-block {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        &__rectangl {
+                border: 2px solid $basick-white;
+                border-radius: 50px;
+                box-sizing: border-box;
+                min-height: 53px;
+                width: 200px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin: 0px 2px 16px ;
+        }
+
+        &__text {
+                font-family: "Jost", sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 17px;
+                line-height: 124%;
+                color: $basick-white;
+                padding: 0px 0px 0px 4px;
+        }
+}
+@media (max-width: 1218px) {
+        .banner__container {
+                padding: 200px 0px 0px 10px;   
+        } 
+        .banner__img {
+                margin: -50px 0px 0px 0px;
+        }      
+}
+
+@media (max-width: 767px) {
+        .main {
+                &__banner {
+                background: url(../img/mobile/background-banner.png) top center / cover no-repeat;
+                }
+        }
+        
+        .banner {
+
+                &__container {
+                        padding: 86px 10px 0px;
+                        display: flex;
+                        flex-direction: column;
+                }
+
+                &__title {
+                        text-align: center;
+                        font-size: 28px;
+                        padding: inherit;
+                        margin: 0px 0px 10px 0px;
+                }
+
+                &__sup-title {
+                        font-size: 18px;
+                        text-align: center;
+                        margin: 0px 0px 20px 0px;
+                }
+
+                &__img {
+                        background: url(../img/mobile/mobile-banner.png) top center no-repeat;
+                        padding-bottom: 119%;
+                        margin: 0px 0px 0px 0px;
+                }
+        }
+
+        .button-block {
+                padding: 0px 40px 0px;
+                justify-content: center;
+                margin: 0px 0px 0px 0px;
+                grid-row-start: 3;
+                grid-row-end: 4;
+        }
+}

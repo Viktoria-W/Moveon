@@ -1,0 +1,169 @@
+.footer {
+    background: url(../img/dextop/background-footer.png) bottom center / cover no-repeat;
+    min-height: 522px;
+
+    &__block {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 184px 10px 10px;
+    }
+
+    &__about {
+        max-width: 520px;
+    }
+
+    &__about-title {
+        font-family: "Jost", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 124%;
+        color: $basick-white;
+        margin: 0px 0px 13px 0px;
+    }
+
+    &__about-text {
+        font-family: "Jost", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 124%;
+        color: $basick-white;
+        margin: 0px 0px 10px 0px;
+    }
+
+    &__contact-title {
+        font-family: "Jost", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 124%;
+        color: $basick-white;
+        margin: 0px 0px 13px 0px;
+    }
+
+    &__contact-link {
+        display: block;
+        font-family: "Jost", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 160%;
+        color: $basick-white;
+    }
+
+    &__socials-title {
+        font-family: "Jost" ,sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 124%;
+        color: $basick-white;
+        margin: 0px 0px 12px 0px;
+    }
+
+    &__socials-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__socials-item {
+        content: '';
+        top: 0;
+        left: 0;
+        background-color: $basick-white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        box-sizing: border-box;
+        padding: 20px;
+        margin: 0px 28px 0px 0px;
+    }
+
+    &__die {
+        font-family: "Jost", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 124%;
+            color: $basick-white;
+            text-align: center;
+            padding: 75px 0px 15px 0px;
+            position: relative;
+
+        &::before {
+            content: '';
+            top: 50%;
+            left: 10%;
+            height: 1px;
+            min-width: 80%;
+            background-color: $basick-white;
+            position: absolute;
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .footer {
+        background: url(../img/mobile/background-footer.png) bottom center / cover no-repeat;
+        min-height: 610px;
+    
+        &__block {
+            padding: 200px 20px 10px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+    
+        &__about {
+            max-width: 350px;
+        }
+    
+        &__about-title {
+            font-size: 22px;
+            margin: 0px 0px 6px 0px;
+        }
+    
+        &__about-text {
+            font-size: 14px;
+            margin: 0px 0px 32px 0px;
+        }
+    
+        &__contact {
+            margin: 0px 0px 28px 0px;
+        }
+    
+        &__contact-title {
+            font-size: 22px;
+            margin: 0px 0px 6px 0px;
+        }
+
+        &__contact-link {
+            font-size: 14px;
+        }
+    
+        &__socials-title {
+            font-size: 22px;
+            margin: 0px 0px 6px 0px;
+        }
+    
+        &__socials-item {
+            width: 35px;
+            height: 33px;
+            padding: 11px;
+            margin: 0px 6px 0px 0px;
+        }
+    
+        &__die {
+            font-size: 18px;
+            
+            &::before {
+                min-width: 80%;
+            }
+        }
+    }
+}
+
+

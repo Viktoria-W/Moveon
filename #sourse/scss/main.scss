@@ -9,7 +9,7 @@
         text-align: center;
         color: $basick-black;
         margin: 0px 0px 23px 0px;
-        padding: 35px 0px 0px 0px;
+        padding: 140px 0px 0px 0px;
     }
 
     &__text {
@@ -25,6 +25,7 @@
     }
 }
 .list-block {
+        margin: 0px 0px 210px 0px;
 
     &__list {
         display: grid;
@@ -135,7 +136,7 @@
     .advantages {
 
         &__container {
-            padding: 0px 10px;
+            padding: 45px 10px 0px;
         }
 
         &__title {
@@ -146,7 +147,7 @@
 
         &__text {
             font-size: 14px;
-            padding: 0px 0px 20px 0px;
+            padding: 0px 0px 0px 0px;
         }
     }
 
@@ -173,6 +174,7 @@
 
         &__item {
             margin: 0px 0px 25px 0px;
+            padding: 15px 7px 0px;
         }
 
         &__container {

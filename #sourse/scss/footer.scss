@@ -4,13 +4,14 @@
 
     &__block {
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-start;
         flex-wrap: wrap;
-        padding: 184px 10px 10px;
+        padding: 184px 0px 10px;
     }
 
     &__about {
         max-width: 520px;
+        margin: 0px 0px 0px 10px;
     }
 
     &__about-title {
@@ -33,6 +34,10 @@
         margin: 0px 0px 10px 0px;
     }
 
+    &__contact {
+        margin: 0px 250px 0px 215px;
+    }
+
     &__contact-title {
         font-family: "Jost", sans-serif;
         font-style: normal;
@@ -51,6 +56,10 @@
         font-size: 18px;
         line-height: 160%;
         color: $basick-white;
+    }
+
+    &__socials {
+        margin: 0px 0px 0px 10px;
     }
 
     &__socials-title {
@@ -79,6 +88,16 @@
         box-sizing: border-box;
         padding: 20px;
         margin: 0px 28px 0px 0px;
+            
+        &:hover {
+                background-color: $basick-purple-hover;
+            }
+    }
+
+    .footer__socials-link:hover {
+        &:hover path {
+            fill: $basick-white;
+        }
     }
 
     &__die {
@@ -89,21 +108,31 @@
             line-height: 124%;
             color: $basick-white;
             text-align: center;
-            padding: 75px 0px 15px 0px;
+            padding: 120px 0px 15px 0px;
             position: relative;
 
         &::before {
             content: '';
-            top: 50%;
-            left: 10%;
+            top: 43%;
+            left: 0;
             height: 1px;
-            min-width: 80%;
+            min-width: 100%;
             background-color: $basick-white;
             position: absolute;
         }
     }
 }
+@media (max-width: 1218px) {
+    .footer {
+        &__about {
+            margin: 0px 0px 0px 10px;
+        }
 
+        &__contact {
+            margin: 0px 10px 0px 10px;
+        }
+    }
+}
 
 @media (max-width: 767px) {
     .footer {
@@ -160,6 +189,7 @@
             font-size: 18px;
             
             &::before {
+                left: 10%;
                 min-width: 80%;
             }
         }

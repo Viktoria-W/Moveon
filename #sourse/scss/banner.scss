@@ -1,7 +1,7 @@
 .main {
         &__banner {
                 background: url(../img/dextop/background-banner.png) top center / cover no-repeat;
-                min-height: 1100px;
+                min-height: 995px;
         }
 }
 .banner {
@@ -10,7 +10,7 @@
                 padding: 316px 0px 0px 10px;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                grid-template-rows: min-content min-content min-content;
+                grid-template-rows: 1fr 1fr 300px;
         }
 
         &__title {
@@ -20,7 +20,7 @@
                 font-size: 48px;
                 color: $basick-white;
                 text-align: left;
-                margin: 0px 0px 14px 0px;
+                margin: 5px 50px 0px 75px;
                 grid-column-start: 1;
                 grid-column-end: 2;
                 grid-row-start: 1;
@@ -34,7 +34,7 @@
                 line-height: 124%;
                 font-size: 20px;
                 text-align: left;
-                margin: -10px 0px 0px 0px;
+                margin: -10px 120px 0px 75px;
                 grid-column-start: 1;
                 grid-column-end: 2;
                 grid-row-start: 2;
@@ -46,13 +46,13 @@
                 grid-column-end: 2;
                 grid-row-start: 2;
                 grid-row-end: 3;
-                margin: 100px 0px 0px 0px;
+                margin: 75px 0px 0px 75px;
         }
 
         &__img {
                 background: url(../img/dextop/mobile-banner.png) top right / contain no-repeat;
+                background-size: 85%;
                 width: 90%;
-                height: 776px;
                 grid-column-start: 2;
                 grid-column-end: 3;
                 grid-row-start: 1;
@@ -76,7 +76,15 @@
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
-                margin: 0px 2px 16px ;
+                margin: 0px 6px 16px ;
+
+                &:hover {
+                        background-color: $basick-white;
+                }
+
+                &:hover path {
+                        fill: $basick-purple-hover;
+                }
         }
 
         &__text {
@@ -87,15 +95,36 @@
                 line-height: 124%;
                 color: $basick-white;
                 padding: 0px 0px 0px 4px;
+                display: block;
+
+                &:hover,
+                &:focus {
+                        color: $basick-purple-hover;
+                }
         }
 }
 @media (max-width: 1218px) {
-        .banner__container {
-                padding: 200px 0px 0px 10px;   
-        } 
-        .banner__img {
-                margin: -50px 0px 0px 0px;
-        }      
+        .banner {
+                &__container {
+                        padding: 200px 0px 0px 10px;  
+                } 
+
+                &__title {
+                        margin: 5px 50px 10px 75px;
+                }
+
+                &__sup-title {
+                        margin: -10px 120px 30px 75px;
+                }
+
+                &__button-block {
+                        margin: 150px 0px 50px 40px;
+                }
+
+                &__img {
+                        margin: -50px 0px 0px 0px;
+                }  
+        }
 }
 
 @media (max-width: 767px) {
@@ -108,7 +137,7 @@
         .banner {
 
                 &__container {
-                        padding: 86px 10px 0px;
+                        padding: 45px 10px 0px;
                         display: flex;
                         flex-direction: column;
                 }
@@ -117,7 +146,7 @@
                         text-align: center;
                         font-size: 28px;
                         padding: inherit;
-                        margin: 0px 0px 10px 0px;
+                        margin: 0px 0px 8px 0px;
                 }
 
                 &__sup-title {

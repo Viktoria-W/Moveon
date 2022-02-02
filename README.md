@@ -9,7 +9,7 @@ Prepros.
 * Первый самостоятельный проект с использованием технологий SCSS. 
 * Шрифты подключены локально. 
 * Цвета проекта вынесены в переменные.
-* Меню-бургер выполнено с использованием <checkbox>.
+* Меню-бургер выполнено с использованием "checkbox".
 ```
 <input type="checkbox" id="checkbox" class="menu__checkbox">
                     <label for="checkbox" class="menu__button">
@@ -27,7 +27,7 @@ Prepros.
 * The first independent project using SCSS technologies.
 * The fonts are connected locally.
 * The colors of the project have been moved to variables.
-* The burger menu is made with <checkbox>.
+* The burger menu is made with "checkbox".
 ```
 <input type="checkbox" id="checkbox" class="menu__checkbox">
                     <label for="checkbox" class="menu__button">

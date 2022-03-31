@@ -17,7 +17,7 @@ Prepros.
                         <span class="menu__icon"></span>
                     </label>
 ```
-Ссылка на готовый проект: https://viktoria-w.github.io/moveon/ (в качестве хостинга Git).
+Ссылка на готовый проект: https://viktoria-w.github.io/Moveon/ (в качестве хостинга Git).
 ***
 ## :open_file_folder: Project:
 Landing page of the Moveon app. 
@@ -37,4 +37,4 @@ Prepros.
                         <span class="menu__icon"></span>
                     </label>
 ```
-Link: https://viktoria-w.github.io/moveon/
+Link: https://viktoria-w.github.io/Moveon/

@@ -1,11 +1,12 @@
 # Moveon landing
-## Проект: 
-Лендинг страница приложения Moveon. Поиск компании и единомышленников в твоем смартфоне.
-## Технологии: 
+## :open_file_folder: Проект: 
+Лендинг страница приложения Moveon. 
+Поиск компании и единомышленников в твоем смартфоне.
+## :computer: Технологии: 
 HTML, SCSS.
-## Сборка: 
+## :package: Сборка: 
 Prepros.
-## Особенности: 
+## :star: Особенности: 
 * Первый самостоятельный проект с использованием технологий SCSS. 
 * Шрифты подключены локально. 
 * Цвета проекта вынесены в переменные.
@@ -17,13 +18,14 @@ Prepros.
                     </label>
 ```
 ***
-## Project:
-Landing page of the Moveon app. Search for a company and like-minded people in your smartphone.
-## Technologies: 
+## :open_file_folder: Project:
+Landing page of the Moveon app. 
+Search for a company and like-minded people in your smartphone.
+## :computer: Technologies: 
 HTML, SCSS.
-## Assembly: 
+## :package: Assembly: 
 Prepros.
-## Peculiarities: 
+## :star: Peculiarities: 
 * The first independent project using SCSS technologies.
 * The fonts are connected locally.
 * The colors of the project have been moved to variables.
